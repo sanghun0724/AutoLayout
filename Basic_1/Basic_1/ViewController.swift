@@ -11,7 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        let button = UIButton.init(type: .system)
+        button.setTitle("MY BUTTON", for: .normal)
+        
+        self.view.addSubview(button)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false  //false == 오토레이아웃 설정 하곘다 //true == frame설정
+        button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true //기본값이 false 라 꼭 true 해야함
+        button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor,constant:  100).isActive = true
+        
     }
 
 
