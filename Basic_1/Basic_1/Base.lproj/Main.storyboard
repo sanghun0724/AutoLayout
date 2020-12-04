@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,35 +13,79 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzt-UH-1r2">
-                                <rect key="frame" x="20" y="64" width="374" height="778"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3k-XM-2pS">
+                                <rect key="frame" x="50" y="50" width="19.666666666666671" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDN-r1-9A1">
+                                <rect key="frame" x="119.66666666666669" y="50" width="19" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT2-gA-8MT">
+                                <rect key="frame" x="121" y="136" width="21" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWI-a8-aaO">
+                                <rect key="frame" x="50" y="136" width="21" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="DQH-eP-St3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jzt-UH-1r2" secondAttribute="bottom" constant="20" id="5xA-Ix-erw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jzt-UH-1r2" secondAttribute="trailing" constant="20" id="EOg-sP-fBG"/>
-                            <constraint firstItem="Jzt-UH-1r2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jaf-h9-e44"/>
-                            <constraint firstItem="Jzt-UH-1r2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="K6Z-E8-frw"/>
+                            <constraint firstItem="c3k-XM-2pS" firstAttribute="leading" secondItem="DQH-eP-St3" secondAttribute="leading" constant="50" id="72F-cT-CXs"/>
+                            <constraint firstItem="gT2-gA-8MT" firstAttribute="leading" secondItem="DWI-a8-aaO" secondAttribute="trailing" constant="50" id="7W7-Px-Tet"/>
+                            <constraint firstItem="DWI-a8-aaO" firstAttribute="top" secondItem="DQH-eP-St3" secondAttribute="top" constant="50" id="Ax2-3K-mDr"/>
+                            <constraint firstItem="GDN-r1-9A1" firstAttribute="leading" secondItem="c3k-XM-2pS" secondAttribute="trailing" constant="50" id="Bgx-ts-aPr"/>
+                            <constraint firstItem="DWI-a8-aaO" firstAttribute="leading" secondItem="DQH-eP-St3" secondAttribute="leading" constant="50" id="CJN-qZ-ay9"/>
+                            <constraint firstItem="c3k-XM-2pS" firstAttribute="top" secondItem="DQH-eP-St3" secondAttribute="top" constant="50" id="L2g-pA-xuT"/>
+                            <constraint firstItem="gT2-gA-8MT" firstAttribute="top" secondItem="DQH-eP-St3" secondAttribute="top" constant="50" id="XM3-rB-jiH"/>
+                            <constraint firstItem="gT2-gA-8MT" firstAttribute="leading" secondItem="DWI-a8-aaO" secondAttribute="trailing" constant="50" id="XSF-sI-21R"/>
+                            <constraint firstItem="gT2-gA-8MT" firstAttribute="top" secondItem="GDN-r1-9A1" secondAttribute="bottom" constant="50" id="c5M-P0-Z9s"/>
+                            <constraint firstItem="GDN-r1-9A1" firstAttribute="top" secondItem="DQH-eP-St3" secondAttribute="top" constant="50" id="kex-ao-nAu"/>
+                            <constraint firstItem="DWI-a8-aaO" firstAttribute="leading" secondItem="GDN-r1-9A1" secondAttribute="trailing" constant="50" id="qKN-nm-Lhf"/>
+                            <constraint firstItem="DWI-a8-aaO" firstAttribute="top" secondItem="c3k-XM-2pS" secondAttribute="bottom" constant="50" id="qLl-Nb-FMe"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ax2-3K-mDr"/>
+                                <exclude reference="qKN-nm-Lhf"/>
+                                <exclude reference="XM3-rB-jiH"/>
+                                <exclude reference="XSF-sI-21R"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Ax2-3K-mDr"/>
+                                <exclude reference="CJN-qZ-ay9"/>
+                                <include reference="qKN-nm-Lhf"/>
+                                <exclude reference="qLl-Nb-FMe"/>
+                                <include reference="XM3-rB-jiH"/>
+                                <exclude reference="XSF-sI-21R"/>
+                                <exclude reference="c5M-P0-Z9s"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="80"/>
+            <point key="canvasLocation" x="137.68115942028987" y="78.260869565217391"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
