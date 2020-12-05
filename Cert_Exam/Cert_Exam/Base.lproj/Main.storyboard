@@ -16,13 +16,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cert_BG" translatesAutoresizingMaskIntoConstraints="NO" id="M3I-zV-0Qg">
-                                <rect key="frame" x="87" y="164" width="240" height="445"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Kn-7D-m68">
+                                <rect key="frame" x="20" y="181.5" width="374" height="533"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG" translatesAutoresizingMaskIntoConstraints="NO" id="M3I-zV-0Qg">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="533"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인인증서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="l28-SH-8f0">
+                                        <rect key="frame" x="121.5" y="0.0" width="131" height="186.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-Mh-lf7">
+                                        <rect key="frame" x="140.5" y="0.0" width="93.5" height="373"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발급자 : 금융결제원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wqo-rO-qGS">
+                                        <rect key="frame" x="121.5" y="0.0" width="131" height="479.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종류 : 은행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-EP-x3x">
+                                        <rect key="frame" x="121.5" y="0.0" width="73" height="533"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만료일 : 2019.4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vxo-Je-Gno">
+                                        <rect key="frame" x="121.5" y="0.0" width="123" height="586.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="l28-SH-8f0" firstAttribute="top" secondItem="M3I-zV-0Qg" secondAttribute="top" id="0p9-wO-xmF"/>
+                                    <constraint firstItem="l28-SH-8f0" firstAttribute="width" secondItem="M3I-zV-0Qg" secondAttribute="width" multiplier="0.35" id="BGx-7c-fbr"/>
+                                    <constraint firstItem="l28-SH-8f0" firstAttribute="centerX" secondItem="M3I-zV-0Qg" secondAttribute="centerX" id="Baj-GM-wMD"/>
+                                    <constraint firstItem="wqo-rO-qGS" firstAttribute="width" secondItem="M3I-zV-0Qg" secondAttribute="width" multiplier="0.35" id="Fq4-0C-vWO"/>
+                                    <constraint firstItem="wqo-rO-qGS" firstAttribute="top" secondItem="M3I-zV-0Qg" secondAttribute="top" id="Fsr-Ox-81A"/>
+                                    <constraint firstItem="Sfv-EP-x3x" firstAttribute="bottom" secondItem="M3I-zV-0Qg" secondAttribute="bottom" id="GEE-bx-yx2"/>
+                                    <constraint firstItem="wqo-rO-qGS" firstAttribute="centerX" secondItem="M3I-zV-0Qg" secondAttribute="centerX" id="HUu-YV-cAc"/>
+                                    <constraint firstAttribute="trailing" secondItem="M3I-zV-0Qg" secondAttribute="trailing" id="IH5-sQ-CuU"/>
+                                    <constraint firstItem="XOh-Mh-lf7" firstAttribute="top" secondItem="M3I-zV-0Qg" secondAttribute="top" id="Jug-6z-Gfo"/>
+                                    <constraint firstAttribute="bottom" secondItem="M3I-zV-0Qg" secondAttribute="bottom" id="NFU-6I-wkq"/>
+                                    <constraint firstItem="Sfv-EP-x3x" firstAttribute="leading" secondItem="wqo-rO-qGS" secondAttribute="leading" id="S4F-WQ-oN1"/>
+                                    <constraint firstItem="Vxo-Je-Gno" firstAttribute="bottom" secondItem="M3I-zV-0Qg" secondAttribute="bottom" multiplier="1.1" id="Seg-SZ-73f"/>
+                                    <constraint firstItem="Sfv-EP-x3x" firstAttribute="top" secondItem="M3I-zV-0Qg" secondAttribute="top" id="UdD-rw-cLr"/>
+                                    <constraint firstAttribute="width" secondItem="6Kn-7D-m68" secondAttribute="height" multiplier="1009:1438" id="Zwb-2B-gu7"/>
+                                    <constraint firstItem="M3I-zV-0Qg" firstAttribute="leading" secondItem="6Kn-7D-m68" secondAttribute="leading" id="aOB-EY-Mvl"/>
+                                    <constraint firstItem="Vxo-Je-Gno" firstAttribute="top" secondItem="M3I-zV-0Qg" secondAttribute="top" id="chy-CD-Ouf"/>
+                                    <constraint firstItem="wqo-rO-qGS" firstAttribute="bottom" secondItem="M3I-zV-0Qg" secondAttribute="bottom" multiplier="0.9" id="euq-fY-NGQ"/>
+                                    <constraint firstItem="XOh-Mh-lf7" firstAttribute="width" secondItem="M3I-zV-0Qg" secondAttribute="width" multiplier="0.25" id="ev2-55-ZHA"/>
+                                    <constraint firstItem="Vxo-Je-Gno" firstAttribute="leading" secondItem="Sfv-EP-x3x" secondAttribute="leading" id="ofT-gD-4je"/>
+                                    <constraint firstItem="XOh-Mh-lf7" firstAttribute="centerX" secondItem="M3I-zV-0Qg" secondAttribute="centerX" id="pz9-pR-jQy"/>
+                                    <constraint firstItem="M3I-zV-0Qg" firstAttribute="top" secondItem="6Kn-7D-m68" secondAttribute="top" id="swj-Q2-7PZ"/>
+                                    <constraint firstItem="XOh-Mh-lf7" firstAttribute="bottom" secondItem="M3I-zV-0Qg" secondAttribute="bottom" multiplier="0.7" id="xUK-ze-Zaz"/>
+                                    <constraint firstItem="l28-SH-8f0" firstAttribute="bottom" secondItem="M3I-zV-0Qg" secondAttribute="bottom" multiplier="0.35" id="z4a-lv-EJU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Kn-7D-m68" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JVK-SZ-T44"/>
+                            <constraint firstItem="6Kn-7D-m68" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ck3-tu-vna"/>
+                            <constraint firstAttribute="trailing" secondItem="6Kn-7D-m68" secondAttribute="trailing" constant="20" id="nj0-Ue-KgA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
