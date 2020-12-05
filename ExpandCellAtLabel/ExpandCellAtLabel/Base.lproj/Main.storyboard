@@ -61,11 +61,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="description" destination="4NI-Vm-BLS" id="QkA-NI-jTf"/>
                                             <outlet property="descriptionLabel" destination="4NI-Vm-BLS" id="15b-Ns-WjN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wl3-t2-fgJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Jzn-UV-tmD"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
