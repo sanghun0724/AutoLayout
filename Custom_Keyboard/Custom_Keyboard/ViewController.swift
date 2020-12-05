@@ -34,7 +34,6 @@ class ViewController: UIViewController,CustomKeyboardDelegate {
         if str == "000" && oldNumber != nil {
             newNumber = oldNumber! * 1000
         }
-
         
         guard let hasNumber = newNumber else {
             return
