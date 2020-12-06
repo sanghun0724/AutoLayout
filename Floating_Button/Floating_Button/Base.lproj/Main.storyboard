@@ -1,24 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Floating_Button" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Moon" translatesAutoresizingMaskIntoConstraints="NO" id="aLu-h5-pCK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2p-Rg-RXy">
+                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Df5-Hx-ErP"/>
+                                    <constraint firstAttribute="height" constant="60" id="lSq-bl-3RD"/>
+                                </constraints>
+                                <state key="normal" image="add_icon_green"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c2p-Rg-RXy" secondAttribute="bottom" constant="40" id="2EB-V5-GXo"/>
+                            <constraint firstAttribute="bottom" secondItem="aLu-h5-pCK" secondAttribute="bottom" id="2pR-fJ-6sP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2p-Rg-RXy" secondAttribute="trailing" constant="40" id="NS5-Qz-uCG"/>
+                            <constraint firstItem="aLu-h5-pCK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bKx-1J-pjz"/>
+                            <constraint firstAttribute="trailing" secondItem="aLu-h5-pCK" secondAttribute="trailing" id="eCc-EF-Bya"/>
+                            <constraint firstItem="aLu-h5-pCK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uer-zK-EY5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="80"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lV7-3n-Ib5">
+            <objects>
+                <viewController id="hGw-yE-stP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YUo-bz-zfj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1D0-ch-qTq">
+                                <rect key="frame" x="319" y="527" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0xQ-WD-FgG"/>
+                                    <constraint firstAttribute="width" constant="50" id="ACt-Ng-hP9"/>
+                                </constraints>
+                                <state key="normal" image="food3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-QI-A3l">
+                                <rect key="frame" x="319" y="687" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fxb-tQ-z8I"/>
+                                    <constraint firstAttribute="width" constant="50" id="KiD-1x-zOp"/>
+                                </constraints>
+                                <state key="normal" image="food1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjM-UF-1tl">
+                                <rect key="frame" x="319" y="607" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0QU-lZ-Cap"/>
+                                    <constraint firstAttribute="height" constant="50" id="M2s-cj-o7Q"/>
+                                </constraints>
+                                <state key="normal" image="food2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX8-DB-sba">
+                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VOW-oU-DfW"/>
+                                    <constraint firstAttribute="width" constant="60" id="dKf-Jk-yhB"/>
+                                </constraints>
+                                <state key="normal" image="add_icon_green"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ujo-Bm-oH9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QX8-DB-sba" firstAttribute="centerY" secondItem="LjM-UF-1tl" secondAttribute="centerY" constant="160" id="DQM-S6-m2S"/>
+                            <constraint firstItem="QX8-DB-sba" firstAttribute="centerX" secondItem="1D0-ch-qTq" secondAttribute="centerX" id="GgE-Rs-LIQ"/>
+                            <constraint firstItem="QX8-DB-sba" firstAttribute="centerY" secondItem="h8g-QI-A3l" secondAttribute="centerY" constant="80" id="I1O-Mh-hsz"/>
+                            <constraint firstItem="Ujo-Bm-oH9" firstAttribute="trailing" secondItem="QX8-DB-sba" secondAttribute="trailing" constant="40" id="Lxo-cA-voK"/>
+                            <constraint firstItem="QX8-DB-sba" firstAttribute="centerY" secondItem="1D0-ch-qTq" secondAttribute="centerY" constant="240" id="Yag-dz-q8L"/>
+                            <constraint firstItem="QX8-DB-sba" firstAttribute="centerX" secondItem="h8g-QI-A3l" secondAttribute="centerX" id="gCa-UE-bQg"/>
+                            <constraint firstItem="QX8-DB-sba" firstAttribute="centerX" secondItem="LjM-UF-1tl" secondAttribute="centerX" id="sKd-oo-mur"/>
+                            <constraint firstItem="Ujo-Bm-oH9" firstAttribute="bottom" secondItem="QX8-DB-sba" secondAttribute="bottom" constant="40" id="ul4-kb-Yjx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzb-J7-0rJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="98.4375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WeatherBG_Moon" width="750" height="1334"/>
+        <image name="add_icon_green" width="482" height="481"/>
+        <image name="food1" width="256" height="256"/>
+        <image name="food2" width="256" height="256"/>
+        <image name="food3" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
