@@ -94,6 +94,9 @@
                                     <constraint firstAttribute="width" constant="60" id="dKf-Jk-yhB"/>
                                 </constraints>
                                 <state key="normal" image="add_icon_green"/>
+                                <connections>
+                                    <action selector="dismissFloating:" destination="hGw-yE-stP" eventType="touchUpInside" id="xge-Dl-gkc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ujo-Bm-oH9"/>
@@ -113,6 +116,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kQX-CQ-Gif"/>
+                    <connections>
+                        <outlet property="btn1CenterY" destination="I1O-Mh-hsz" id="eAT-or-QqR"/>
+                        <outlet property="btn2CenterY" destination="DQM-S6-m2S" id="O7R-pE-w6g"/>
+                        <outlet property="btn3CenterY" destination="Yag-dz-q8L" id="jji-kk-mFq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzb-J7-0rJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
