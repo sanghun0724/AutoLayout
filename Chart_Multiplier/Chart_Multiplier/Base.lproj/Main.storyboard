@@ -65,15 +65,40 @@
                                     <constraint firstItem="9Eu-Uo-hx0" firstAttribute="leading" secondItem="c1K-5T-g3e" secondAttribute="trailing" constant="20" id="vGp-Oq-Uon"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byJ-yi-I0v">
+                                <rect key="frame" x="20" y="468" width="42" height="30"/>
+                                <state key="normal" title="Style1"/>
+                                <connections>
+                                    <action selector="style1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1FV-KS-7kZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GE-ex-7mN">
+                                <rect key="frame" x="82" y="468" width="44" height="30"/>
+                                <state key="normal" title="Style2"/>
+                                <connections>
+                                    <action selector="style2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1LX-Ii-Ezi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iSw-23-DeH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2W9-lI-Kc5"/>
+                            <constraint firstItem="byJ-yi-I0v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="50k-mS-oLf"/>
+                            <constraint firstItem="byJ-yi-I0v" firstAttribute="top" secondItem="iSw-23-DeH" secondAttribute="bottom" constant="20" id="HUC-S6-o7R"/>
+                            <constraint firstItem="7GE-ex-7mN" firstAttribute="top" secondItem="iSw-23-DeH" secondAttribute="bottom" constant="20" id="RkO-rv-lWx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iSw-23-DeH" secondAttribute="trailing" constant="20" id="bNU-d6-BOa"/>
+                            <constraint firstItem="7GE-ex-7mN" firstAttribute="leading" secondItem="byJ-yi-I0v" secondAttribute="trailing" constant="20" id="qhm-8v-CNe"/>
                             <constraint firstItem="iSw-23-DeH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="y85-Lr-GEg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graph1Height" destination="eUx-BU-Dve" id="ZUm-3a-JbH"/>
+                        <outlet property="graph2Height" destination="hTl-Qe-qG5" id="i4u-HO-W8G"/>
+                        <outlet property="graph3Height" destination="HIQ-ie-Ok5" id="mjQ-Fe-NgR"/>
+                        <outlet property="graph4Height" destination="XB0-HQ-C4D" id="PWy-Wq-QtX"/>
+                        <outlet property="graph5Height" destination="ERe-Sa-TjD" id="E10-fE-ii9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
