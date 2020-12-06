@@ -26,6 +26,9 @@
                                     <constraint firstAttribute="height" constant="60" id="lSq-bl-3RD"/>
                                 </constraints>
                                 <state key="normal" image="add_icon_green"/>
+                                <connections>
+                                    <segue destination="hGw-yE-stP" kind="show" identifier="showPopup" animates="NO" id="H1m-Bf-Ofp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,16 +47,24 @@
             </objects>
             <point key="canvasLocation" x="139" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Floating Button List View Controller-->
         <scene sceneID="lV7-3n-Ib5">
             <objects>
-                <viewController id="hGw-yE-stP" sceneMemberID="viewController">
+                <viewController id="hGw-yE-stP" customClass="FloatingButtonListViewController" customModule="Floating_Button" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YUo-bz-zfj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zS-l3-TDa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="M3F-xC-005">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1D0-ch-qTq">
-                                <rect key="frame" x="319" y="527" width="50" height="50"/>
+                                <rect key="frame" x="319" y="473" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0xQ-WD-FgG"/>
                                     <constraint firstAttribute="width" constant="50" id="ACt-Ng-hP9"/>
@@ -61,7 +72,7 @@
                                 <state key="normal" image="food3"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-QI-A3l">
-                                <rect key="frame" x="319" y="687" width="50" height="50"/>
+                                <rect key="frame" x="319" y="633" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fxb-tQ-z8I"/>
                                     <constraint firstAttribute="width" constant="50" id="KiD-1x-zOp"/>
@@ -69,7 +80,7 @@
                                 <state key="normal" image="food1"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjM-UF-1tl">
-                                <rect key="frame" x="319" y="607" width="50" height="50"/>
+                                <rect key="frame" x="319" y="553" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="0QU-lZ-Cap"/>
                                     <constraint firstAttribute="height" constant="50" id="M2s-cj-o7Q"/>
@@ -77,7 +88,7 @@
                                 <state key="normal" image="food2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX8-DB-sba">
-                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                                <rect key="frame" x="314" y="708" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="VOW-oU-DfW"/>
                                     <constraint firstAttribute="width" constant="60" id="dKf-Jk-yhB"/>
@@ -86,18 +97,22 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ujo-Bm-oH9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1zS-l3-TDa" secondAttribute="bottom" id="CSh-Vk-mdr"/>
                             <constraint firstItem="QX8-DB-sba" firstAttribute="centerY" secondItem="LjM-UF-1tl" secondAttribute="centerY" constant="160" id="DQM-S6-m2S"/>
                             <constraint firstItem="QX8-DB-sba" firstAttribute="centerX" secondItem="1D0-ch-qTq" secondAttribute="centerX" id="GgE-Rs-LIQ"/>
                             <constraint firstItem="QX8-DB-sba" firstAttribute="centerY" secondItem="h8g-QI-A3l" secondAttribute="centerY" constant="80" id="I1O-Mh-hsz"/>
                             <constraint firstItem="Ujo-Bm-oH9" firstAttribute="trailing" secondItem="QX8-DB-sba" secondAttribute="trailing" constant="40" id="Lxo-cA-voK"/>
+                            <constraint firstItem="1zS-l3-TDa" firstAttribute="leading" secondItem="Ujo-Bm-oH9" secondAttribute="leading" id="QfS-14-UmF"/>
                             <constraint firstItem="QX8-DB-sba" firstAttribute="centerY" secondItem="1D0-ch-qTq" secondAttribute="centerY" constant="240" id="Yag-dz-q8L"/>
+                            <constraint firstItem="Ujo-Bm-oH9" firstAttribute="trailing" secondItem="1zS-l3-TDa" secondAttribute="trailing" id="ZCH-No-PCu"/>
                             <constraint firstItem="QX8-DB-sba" firstAttribute="centerX" secondItem="h8g-QI-A3l" secondAttribute="centerX" id="gCa-UE-bQg"/>
+                            <constraint firstItem="1zS-l3-TDa" firstAttribute="top" secondItem="YUo-bz-zfj" secondAttribute="top" id="kW6-3Z-Plw"/>
                             <constraint firstItem="QX8-DB-sba" firstAttribute="centerX" secondItem="LjM-UF-1tl" secondAttribute="centerX" id="sKd-oo-mur"/>
                             <constraint firstItem="Ujo-Bm-oH9" firstAttribute="bottom" secondItem="QX8-DB-sba" secondAttribute="bottom" constant="40" id="ul4-kb-Yjx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kQX-CQ-Gif"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzb-J7-0rJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
