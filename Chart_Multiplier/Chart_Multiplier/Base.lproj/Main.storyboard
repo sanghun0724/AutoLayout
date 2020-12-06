@@ -20,23 +20,23 @@
                                 <rect key="frame" x="20" y="248" width="374" height="200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0B-GB-Z0G">
-                                        <rect key="frame" x="232.5" y="31" width="50.5" height="169"/>
+                                        <rect key="frame" x="232.5" y="20" width="50.5" height="180"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDu-AT-3D7">
-                                        <rect key="frame" x="303" y="31" width="51" height="169"/>
+                                        <rect key="frame" x="303" y="0.0" width="51" height="200"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Eu-Uo-hx0">
-                                        <rect key="frame" x="161.5" y="31" width="51" height="169"/>
+                                        <rect key="frame" x="161.5" y="40" width="51" height="160"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1K-5T-g3e">
-                                        <rect key="frame" x="91" y="31" width="50.5" height="169"/>
+                                        <rect key="frame" x="91" y="80" width="50.5" height="120"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IH4-y3-d4F">
-                                        <rect key="frame" x="20" y="31" width="51" height="169"/>
+                                        <rect key="frame" x="20" y="100" width="51" height="100"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                     </view>
                                 </subviews>
@@ -47,17 +47,17 @@
                                     <constraint firstItem="iDu-AT-3D7" firstAttribute="width" secondItem="IH4-y3-d4F" secondAttribute="width" id="4Kr-Q1-iuR"/>
                                     <constraint firstItem="iDu-AT-3D7" firstAttribute="leading" secondItem="O0B-GB-Z0G" secondAttribute="trailing" constant="20" id="8fy-xi-yQ3"/>
                                     <constraint firstAttribute="bottom" secondItem="iDu-AT-3D7" secondAttribute="bottom" id="C7I-7x-K8c"/>
-                                    <constraint firstItem="iDu-AT-3D7" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.845" id="ERe-Sa-TjD"/>
-                                    <constraint firstItem="9Eu-Uo-hx0" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.845" id="HIQ-ie-Ok5"/>
+                                    <constraint firstItem="iDu-AT-3D7" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" id="ERe-Sa-TjD"/>
+                                    <constraint firstItem="9Eu-Uo-hx0" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.8" id="HIQ-ie-Ok5"/>
                                     <constraint firstItem="O0B-GB-Z0G" firstAttribute="leading" secondItem="9Eu-Uo-hx0" secondAttribute="trailing" constant="20" id="IHC-rl-kej"/>
                                     <constraint firstAttribute="trailing" secondItem="iDu-AT-3D7" secondAttribute="trailing" constant="20" id="KjM-pv-8Ub"/>
                                     <constraint firstAttribute="bottom" secondItem="c1K-5T-g3e" secondAttribute="bottom" id="Pri-mY-w4d"/>
-                                    <constraint firstItem="O0B-GB-Z0G" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.845" id="XB0-HQ-C4D"/>
+                                    <constraint firstItem="O0B-GB-Z0G" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.9" id="XB0-HQ-C4D"/>
                                     <constraint firstAttribute="bottom" secondItem="9Eu-Uo-hx0" secondAttribute="bottom" id="aUg-r9-zWL"/>
                                     <constraint firstItem="c1K-5T-g3e" firstAttribute="leading" secondItem="IH4-y3-d4F" secondAttribute="trailing" constant="20" id="cfl-td-XVJ"/>
                                     <constraint firstAttribute="bottom" secondItem="O0B-GB-Z0G" secondAttribute="bottom" id="eH5-Yo-QUS"/>
-                                    <constraint firstItem="IH4-y3-d4F" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.845" id="eUx-BU-Dve"/>
-                                    <constraint firstItem="c1K-5T-g3e" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.845" id="hTl-Qe-qG5"/>
+                                    <constraint firstItem="IH4-y3-d4F" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.5" id="eUx-BU-Dve"/>
+                                    <constraint firstItem="c1K-5T-g3e" firstAttribute="height" secondItem="iSw-23-DeH" secondAttribute="height" multiplier="0.6" id="hTl-Qe-qG5"/>
                                     <constraint firstItem="IH4-y3-d4F" firstAttribute="leading" secondItem="iSw-23-DeH" secondAttribute="leading" constant="20" id="hWg-XZ-WIm"/>
                                     <constraint firstItem="c1K-5T-g3e" firstAttribute="width" secondItem="IH4-y3-d4F" secondAttribute="width" id="kG5-6n-CKP"/>
                                     <constraint firstItem="O0B-GB-Z0G" firstAttribute="width" secondItem="IH4-y3-d4F" secondAttribute="width" id="sLs-4B-pwf"/>
