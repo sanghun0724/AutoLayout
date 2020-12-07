@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6606952257DFAA900D27D68 /* DiagonalCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6606951257DFAA900D27D68 /* DiagonalCustomImageView.swift */; };
 		B6AB8CEC257D47F000E19841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB8CEB257D47F000E19841 /* AppDelegate.swift */; };
 		B6AB8CEE257D47F000E19841 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB8CED257D47F000E19841 /* SceneDelegate.swift */; };
 		B6AB8CF0257D47F000E19841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB8CEF257D47F000E19841 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6606951257DFAA900D27D68 /* DiagonalCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalCustomImageView.swift; sourceTree = "<group>"; };
 		B6AB8CE8257D47F000E19841 /* Running_CodeConnectNIb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Running_CodeConnectNIb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AB8CEB257D47F000E19841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AB8CED257D47F000E19841 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				B6AB8CEB257D47F000E19841 /* AppDelegate.swift */,
 				B6AB8CED257D47F000E19841 /* SceneDelegate.swift */,
 				B6AB8CEF257D47F000E19841 /* ViewController.swift */,
+				B6606951257DFAA900D27D68 /* DiagonalCustomImageView.swift */,
 				B6AB8CF1257D47F000E19841 /* Main.storyboard */,
 				B6AB8CF4257D47F300E19841 /* Assets.xcassets */,
 				B6AB8CF6257D47F300E19841 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6606952257DFAA900D27D68 /* DiagonalCustomImageView.swift in Sources */,
 				B6AB8CF0257D47F000E19841 /* ViewController.swift in Sources */,
 				B6AB8CEC257D47F000E19841 /* AppDelegate.swift in Sources */,
 				B6AB8CEE257D47F000E19841 /* SceneDelegate.swift in Sources */,
