@@ -13,6 +13,8 @@
 		B660698A257E16E800D27D68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6606988257E16E800D27D68 /* Main.storyboard */; };
 		B660698C257E16EA00D27D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B660698B257E16EA00D27D68 /* Assets.xcassets */; };
 		B660698F257E16EA00D27D68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B660698D257E16EA00D27D68 /* LaunchScreen.storyboard */; };
+		B6606998257E174F00D27D68 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6606997257E174F00D27D68 /* PopupViewController.swift */; };
+		B660699B257E17B600D27D68 /* PopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B660699A257E17B600D27D68 /* PopupViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B660698B257E16EA00D27D68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B660698E257E16EA00D27D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6606990257E16EA00D27D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6606997257E174F00D27D68 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		B660699A257E17B600D27D68 /* PopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopupViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B6606984257E16E800D27D68 /* SceneDelegate.swift */,
 				B6606986257E16E800D27D68 /* ViewController.swift */,
 				B6606988257E16E800D27D68 /* Main.storyboard */,
+				B6606997257E174F00D27D68 /* PopupViewController.swift */,
+				B660699A257E17B600D27D68 /* PopupViewController.storyboard */,
 				B660698B257E16EA00D27D68 /* Assets.xcassets */,
 				B660698D257E16EA00D27D68 /* LaunchScreen.storyboard */,
 				B6606990257E16EA00D27D68 /* Info.plist */,
@@ -124,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B660699B257E17B600D27D68 /* PopupViewController.storyboard in Resources */,
 				B660698F257E16EA00D27D68 /* LaunchScreen.storyboard in Resources */,
 				B660698C257E16EA00D27D68 /* Assets.xcassets in Resources */,
 				B660698A257E16E800D27D68 /* Main.storyboard in Resources */,
@@ -140,6 +147,7 @@
 				B6606987257E16E800D27D68 /* ViewController.swift in Sources */,
 				B6606983257E16E800D27D68 /* AppDelegate.swift in Sources */,
 				B6606985257E16E800D27D68 /* SceneDelegate.swift in Sources */,
+				B6606998257E174F00D27D68 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
