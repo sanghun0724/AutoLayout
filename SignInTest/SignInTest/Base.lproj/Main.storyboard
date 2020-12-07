@@ -94,6 +94,12 @@
                             <constraint firstItem="0ZN-aj-vp5" firstAttribute="top" secondItem="0R7-be-ekw" secondAttribute="bottom" constant="30" id="ykj-pc-sW6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailError" destination="0hq-IX-wY1" id="GQr-gU-8YO"/>
+                        <outlet property="emailTextField" destination="Noj-s7-aFm" id="P8p-pP-ZIb"/>
+                        <outlet property="passwordError" destination="p3O-JP-ibv" id="xQB-aJ-q9g"/>
+                        <outlet property="passwordTextField" destination="7IA-gO-BpE" id="CFc-rV-4LM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
