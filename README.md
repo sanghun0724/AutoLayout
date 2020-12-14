@@ -1,4 +1,4 @@
-# AutoLayout인프런
+# AutoLayout활용
 ## AutoLayout을 이용한 다양한 View 구성
 
 * StackView를 사용한 Calulator   
