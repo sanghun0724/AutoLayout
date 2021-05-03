@@ -1,5 +1,5 @@
 # AutoLayout활용
-## AutoLayout을 이용한 다양한 View 구성
+## AutoLayout을 이용한 다양한 View 구성 ref: 인프런 Ios autolayout 완벽가이드 내용 중 - 
 
 * StackView를 사용한 Calulator   
 <img src="/ImageFile/Simulator1.png" width="156px" height="320px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>   
